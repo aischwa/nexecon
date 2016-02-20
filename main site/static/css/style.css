@@ -3,6 +3,28 @@
 	margin-right: 2em;
 }
 
+/* copied from rinjani.css, but replaced class .page-scroll with .landing to avoid
+ * js scrolling calls and allow pages to route successfully
+ */
+#intro .intro-body .landing {
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  #intro .intro-body .landing {
+    margin-top: 50px;
+  }
+}
+#intro .intro-body .landing a.btn {
+  font-family: 'Raleway', sans-serif;
+}
+@media (min-width: 768px) {
+  #intro .intro-body .landing a.btn {
+    padding: 20px 25px;
+    font-size: 22px;
+  }
+}
+/*end copied CSS*/
+
 #intro .intro-body .logo > img{
 	display: block;
 	margin-left: auto;
@@ -14,3 +36,10 @@
 	padding-top: 8px;
 	max-height: 50px;
 }
+
+.error-page img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 15em;
+} 

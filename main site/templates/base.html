@@ -68,20 +68,77 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
-
+<defs>
+<symbol id="icon-circle-down" viewBox="0 0 1024 1024">
+<title>circle-down</title>
+<path class="path1" d="M1024 512c0-282.77-229.23-512-512-512s-512 229.23-512 512 229.23 512 512 512 512-229.23 512-512zM96 512c0-229.75 186.25-416 416-416s416 186.25 416 416-186.25 416-416 416-416-186.25-416-416z"></path>
+<path class="path2" d="M317.256 354.744l-90.512 90.512 285.256 285.254 285.254-285.256-90.508-90.508-194.746 194.744z"></path>
+</symbol>
+</defs>
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->    
-    
-    <!-- Begin Page Loader -->
-    <div id="page-loader">
-        <div class="preload">
-            <img src="static/img/preloader.gif" alt="Loading"/>
-        </div>
-        <!-- //.preload -->
+
+<!-- Begin Page Loader -->
+<div id="page-loader">
+    <div class="preload">
+        <img src="static/img/preloader.gif" alt="Loading"/>
     </div>
-    <!-- //End Page Loader -->
-    
+    <!-- //.preload -->
+</div>
+<!-- //End Page Loader -->
+<!-- Begin Navbar -->
+<nav id="navigation" class="navbar navbar-inverse navbar-fixed-top navbar-landing" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a href="#page-top"><img class="navbar-brand" id="navbar-logo" src="static/img/logo.png"></a>
+            <a class="navbar-brand" href="#page-top">Nexecon</a>
+        </div>
+        <!-- //.navbar-header -->
+        
+        <div class="navbar-collapse collapse navbar-rj-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="page-scroll">
+                    <a href="#who-we-are">About</a>
+                </li>
+                
+                <li class="page-scroll">
+                    <a href="#our-main-skills">Skills</a>
+                </li>
+                
+                <li class="page-scroll">
+                    <a href="#our-services">Services</a>
+                </li>
+                
+                <li class="page-scroll">
+                    <a href="#our-latest-work">Portfolio</a>
+                </li>
+                
+                <li class="page-scroll">
+                    <a href="#meet-the-team">Team</a>
+                </li>
+                
+                <li class="page-scroll">
+                    <a href="#our-pricing">Pricing</a>
+                </li>
+                
+                <li class="page-scroll">
+                    <a href="#contact-us">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- //.navbar-collapse -->
+    </div>
+    <!-- //.container -->
+</nav>
+<!-- //End Navbar -->
     
 {% block content %}
 {% endblock %}

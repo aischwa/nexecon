@@ -73,15 +73,22 @@ $(function() {
         $('body.push.push-left').toggleClass('pushed-left');
         $('body.push.push-right').toggleClass('pushed-right');
     });
-            
-
+    
+    /* below was added to control transparent navbar at landing*/        
+   $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('#navigation').removeClass('navbar-landing');
+    } else {
+       $('#navigation').addClass('navbar-landing');
+    }
+    });
     /*---------------------------------------*/
     /*  VIDEO BACKGROUND
     /*---------------------------------------*/
     $(window).load(function(){
         $('#intro').vide({
-            mp4: 'static/video/video-bg',
             webm: 'static/video/video-bg',
+            mp4: 'static/video/video-bg',
             ogv: 'static/video/video-bg',
             poster: 'static/img/video-poster'
         });

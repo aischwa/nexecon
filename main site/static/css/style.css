@@ -1,8 +1,18 @@
-.landing-btn {
-	margin-left: 2em;
-	margin-right: 2em;
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
 }
 
+.icon-circle-down{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	z-index: 100;
+	color: white;
+	font-size: 48px;
+}
 /* copied from rinjani.css, but replaced class .page-scroll with .landing to avoid
  * js scrolling calls and allow pages to route successfully
  */
@@ -43,3 +53,8 @@
 	margin-right: auto;
 	max-height: 15em;
 } 
+
+.navbar-landing{
+	background: transparent !important;
+	box-shadow: none !important;
+}
